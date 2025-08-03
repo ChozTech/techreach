@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Choz AI Outreach Generator</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1><span class="brand">Choz</span> | AI-Powered Tech Sales Outreach</h1>
+        <p class="tagline">Land your dream SaaS role with a customized outreach playbook.</p>
+        <form id="outreachForm">
+            <input type="text" id="studentName" placeholder="Your Name" required />
+            <input type="text" id="targetName" placeholder="Recipient's Name (e.g. James Hype)" required />
+            <input type="text" id="targetJob" placeholder="Target Job Title (e.g. Account Executive)" required />
+            <select id="outreachGoal" required>
+                <option value="">Select Outreach Goal</option>
+                <option value="informational">Request Informational Interview</option>
+                <option value="referral">Request Referral</option>
+                <option value="internship">Request Internship Advice</option>
+            </select>
+            <button type="submit">🎯 Generate My Playbook</button>
+        </form>
+        <div id="output" class="output-box"></div>
+    </div>
+    <canvas id="bgCanvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
